@@ -17,6 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from django.urls import path
+from . import views
+
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('', views.pagina_bienvenida, name='pagina_bienvenida'),
+    # Otras rutas de la aplicación
 ]
+
