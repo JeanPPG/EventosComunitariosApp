@@ -10,8 +10,6 @@ eventos locales de manera sencilla y eficiente.
 - 🔍 Búsqueda de eventos por título, fecha o ubicación
 - 📌 Detalles completos del evento con información relevante
 - ✅ Registro de asistencia fácil y rápido
-- 📧 Notificaciones por correo electrónico para confirmaciones y recordatorios
-- 🛠️ Interfaz de administración para gestionar eventos y usuarios
 
 ## Instalación
 
