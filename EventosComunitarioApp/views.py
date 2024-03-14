@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Evento
 
 def pagina_bienvenida(request):
     return render(request, 'paginas/bienvenida.html')
@@ -18,3 +19,14 @@ def registro_eventos(request):
     else:
         # Renderizar el formulario vacío
         return render(request, 'paginas/registro_evento.html')
+
+def buscar_eventos(request):
+    eventos = None
+    query = request.GET.get('q')
+    if query:
+        eventos = Evento.objects.filter(Q(titulo__icontains=query) | Q(fecha__icontains=query) | Q(ubicacion__icontains=query))
+    return render(request, 'paginas/buscar_eventos.html', {'eventos': eventos, 'query': query})
+
+def detalle_evento(request, evento_id):
+    evento = Evento.objects.get(pk=evento_id)
+    return render(request, 'detalle_evento.html', {'evento': evento})

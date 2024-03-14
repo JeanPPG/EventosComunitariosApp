@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Eventos</title>
+</head>
+<body>
+    <h1>Buscar Eventos</h1>
+    <form method="GET">
+        <input type="text" name="q" placeholder="Buscar por título, fecha o ubicación" value="{{ query }}">
+        <button type="submit">Buscar</button>
+    </form>
+    {% if eventos %}
+        <ul>
+            {% for evento in eventos %}
+                <li>
+                    <a href="{% url 'detalle_evento' evento.id %}">
+                        {{ evento.titulo }} - {{ evento.fecha }} - {{ evento.ubicacion }}
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No se encontraron eventos que coincidan con la búsqueda.</p>
+    {% endif %}
+</body>
+</html>
