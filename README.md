@@ -1,7 +1,7 @@
 # Gestión de Eventos Comunitarios 🎉
 
 Bienvenido a nuestra aplicación de gestión de eventos comunitarios. Esta aplicación te permite organizar y participar en
-eventos locales de manera sencilla y eficiente.
+eventos locales de manera sencilla y eficiente..
 
 ## Funcionalidades
 
