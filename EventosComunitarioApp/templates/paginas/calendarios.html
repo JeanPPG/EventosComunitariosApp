@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario de Eventos</title>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css' rel='stylesheet' />
+    <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css' rel='stylesheet' />
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Calendario de Eventos</h1>
+        <div class="row">
+            <div class="col-md-8">
+                <div id='calendario'></div>
+            </div>
+            <div class="col-md-4">
+                <div id='eventosDia'>
+                    <h2 class="text-center">Eventos del día</h2>
+                    <ul id="listaEventos" class="list-group"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js'></script>
+    <script>
+        $(document).ready(function() {
+            $('#calendario').fullCalendar({
+                // Configuración del calendario
+                dayClick: function(date, jsEvent, view) {
+                    var events = $('#calendario').fullCalendar('clientEvents', function(event) {
+                        return event.start.format('YYYY-MM-DD') === date.format('YYYY-MM-DD');
+                    });
+                    $('#listaEventos').empty();
+                    if (events.length > 0) {
+                        $.each(events, function(index, event) {
+                            $('#listaEventos').append('<li class="list-group-item">' + event.title + '</li>');
+                        });
+                    } else {
+                        $('#listaEventos').append('<li class="list-group-item">No hay eventos para este día</li>');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

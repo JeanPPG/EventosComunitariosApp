@@ -22,6 +22,7 @@ from . import views
 
 urlpatterns = [
     path('', views.pagina_bienvenida, name='pagina_bienvenida'),
-    # Otras rutas de la aplicación
+    path('calendario/', views.calendario_eventos, name='calendario_eventos'),
+
 ]
 

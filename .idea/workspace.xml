@@ -8,6 +8,7 @@
       <change afterPath="$PROJECT_DIR$/EventosComunitarioApp/admin.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/EventosComunitarioApp/models.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/EventosComunitarioApp/templates/paginas/bienvenida.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EventosComunitarioApp/templates/paginas/calendarios.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/EventosComunitarioApp/views.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/requerimientos.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/EventosComunitarioApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/EventosComunitarioApp.iml" afterDir="false" />
@@ -48,23 +49,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Django Server.EventosComunitarioApp.executor": "Run",
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "vcs.Mercurial",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Django Server.EventosComunitarioApp.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Mercurial&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Documentos\Github\EventosComunitariosApp\EventosComunitarioApp\static" />
@@ -120,6 +121,8 @@
       <updated>1710179681867</updated>
       <workItem from="1710179687792" duration="1115000" />
       <workItem from="1710363652553" duration="4923000" />
+      <workItem from="1710368727005" duration="930000" />
+      <workItem from="1710370867381" duration="1205000" />
     </task>
     <servers />
   </component>
