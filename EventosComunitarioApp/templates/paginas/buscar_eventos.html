@@ -18,11 +18,11 @@
                 </div>
             </form>
             {% if eventos %}
-                <ul class="list-disc">
+                <ul class="list-disc pl-4">
                     {% for evento in eventos %}
-                        <li>
+                        <li class="mb-2">
                             <a class="text-blue-500 hover:text-blue-800" href="{% url 'detalle_evento' evento.id %}">
-                                {{ evento.titulo }} - {{ evento.fecha }} - {{ evento.ubicacion }}
+                                <span class="font-bold">{{ evento.titulo }}</span> - {{ evento.fecha }} - {{ evento.ubicacion }}
                             </a>
                         </li>
                     {% endfor %}

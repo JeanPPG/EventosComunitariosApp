@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from .models import Evento
 from django.shortcuts import render, redirect
+from django.db.models import Q
 def pagina_bienvenida(request):
     return render(request, 'paginas/bienvenida.html')
 

@@ -8,6 +8,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EventosComunitarioApp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/EventosComunitarioApp/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EventosComunitarioApp/templates/paginas/bienvenida.html" beforeDir="false" afterPath="$PROJECT_DIR$/EventosComunitarioApp/templates/paginas/bienvenida.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EventosComunitarioApp/templates/paginas/buscar_eventos.html" beforeDir="false" afterPath="$PROJECT_DIR$/EventosComunitarioApp/templates/paginas/buscar_eventos.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EventosComunitarioApp/templates/paginas/calendarios.html" beforeDir="false" afterPath="$PROJECT_DIR$/EventosComunitarioApp/templates/paginas/calendarios.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EventosComunitarioApp/templates/paginas/detalle_evento.html" beforeDir="false" afterPath="$PROJECT_DIR$/EventosComunitarioApp/templates/paginas/detalle_evento.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EventosComunitarioApp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/EventosComunitarioApp/urls.py" afterDir="false" />
@@ -121,7 +122,7 @@
       <workItem from="1710363652553" duration="4923000" />
       <workItem from="1710368727005" duration="930000" />
       <workItem from="1710370867381" duration="6463000" />
-      <workItem from="1710378322760" duration="2563000" />
+      <workItem from="1710378322760" duration="3035000" />
     </task>
     <servers />
   </component>
