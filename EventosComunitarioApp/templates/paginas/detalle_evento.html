@@ -4,13 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalle del Evento</title>
+    <!-- Agregar Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <h1>Detalle del Evento</h1>
-    <p>Título: {{ evento.titulo }}</p>
-    <p>Fecha: {{ evento.fecha }}</p>
-    <p>Ubicación: {{ evento.ubicacion }}</p>
-    <p>Descripción: {{ evento.descripcion }}</p>
-    <!-- Agrega más detalles del evento según sea necesario -->
+<body class="bg-gray-100">
+    <div class="container mx-auto py-8">
+        <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+            <h1 class="text-3xl font-bold mb-4">Detalle del Evento</h1>
+            <div class="mb-4">
+                <p><strong>Título:</strong> {{ evento.titulo }}</p>
+                <p><strong>Fecha:</strong> {{ evento.fecha }}</p>
+                <p><strong>Ubicación:</strong> {{ evento.ubicacion }}</p>
+                <p><strong>Descripción:</strong> {{ evento.descripcion }}</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
+

@@ -24,6 +24,7 @@ urlpatterns = [
     path('', views.pagina_bienvenida, name='pagina_bienvenida'),
     path('calendario/', views.calendario_eventos, name='calendario_eventos'),
     path('registro-evento/', views.registro_eventos, name='registro_evento'),
-    path('buscar_evento/', views.buscar_eventos, name='buscar_evento')
+    path('buscar_evento/', views.buscar_eventos, name='buscar_evento'),
+    path('evento/<int:evento_id>/', views.detalle_evento, name='detalle_evento'),
 ]
 

@@ -4,25 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buscar Eventos</title>
+    <!-- Agregar Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <h1>Buscar Eventos</h1>
-    <form method="GET">
-        <input type="text" name="q" placeholder="Buscar por título, fecha o ubicación" value="{{ query }}">
-        <button type="submit">Buscar</button>
-    </form>
-    {% if eventos %}
-        <ul>
-            {% for evento in eventos %}
-                <li>
-                    <a href="{% url 'detalle_evento' evento.id %}">
-                        {{ evento.titulo }} - {{ evento.fecha }} - {{ evento.ubicacion }}
-                    </a>
-                </li>
-            {% endfor %}
-        </ul>
-    {% else %}
-        <p>No se encontraron eventos que coincidan con la búsqueda.</p>
-    {% endif %}
+<body class="bg-gray-100">
+    <div class="container mx-auto py-8">
+        <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+            <h1 class="text-3xl font-bold mb-4">Buscar Eventos</h1>
+            <form class="mb-4" method="GET">
+                <div class="flex items-center border-b border-b-2 border-gray-500 py-2">
+                    <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" name="q" placeholder="Buscar por título, fecha o ubicación" value="{{ query }}">
+                    <button class="flex-shrink-0 bg-blue-500 hover:bg-blue-700 border-blue-500 hover:border-blue-700 text-sm border-4 text-white py-1 px-2 rounded" type="submit">Buscar</button>
+                </div>
+            </form>
+            {% if eventos %}
+                <ul class="list-disc">
+                    {% for evento in eventos %}
+                        <li>
+                            <a class="text-blue-500 hover:text-blue-800" href="{% url 'detalle_evento' evento.id %}">
+                                {{ evento.titulo }} - {{ evento.fecha }} - {{ evento.ubicacion }}
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <p class="text-red-500">No se encontraron eventos que coincidan con la búsqueda.</p>
+            {% endif %}
+        </div>
+    </div>
 </body>
 </html>

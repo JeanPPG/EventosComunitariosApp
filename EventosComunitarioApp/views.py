@@ -29,4 +29,4 @@ def buscar_eventos(request):
 
 def detalle_evento(request, evento_id):
     evento = Evento.objects.get(pk=evento_id)
-    return render(request, 'detalle_evento.html', {'evento': evento})
+    return render(request, 'paginas/detalle_evento.html', {'evento': evento})
