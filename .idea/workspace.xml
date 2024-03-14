@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8227cca9-c742-4d7f-ad15-6ef71f3ba8e6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f4f6ca4f-bcea-4922-8728-eb95fe2d2514.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f4f6ca4f-bcea-4922-8728-eb95fe2d2514.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventosComunitarioApp/templates/paginas/detalle_evento.html" beforeDir="false" afterPath="$PROJECT_DIR$/EventosComunitarioApp/templates/paginas/detalle_evento.html" afterDir="false" />
+    <list default="true" id="8227cca9-c742-4d7f-ad15-6ef71f3ba8e6" name="Changes" comment="Arreglo de funcionalidad">
       <change beforePath="$PROJECT_DIR$/EventosComunitarioApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/EventosComunitarioApp/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -118,8 +115,17 @@
       <workItem from="1710368727005" duration="930000" />
       <workItem from="1710370867381" duration="6463000" />
       <workItem from="1710378322760" duration="6045000" />
-      <workItem from="1710391445797" duration="134000" />
+      <workItem from="1710391445797" duration="371000" />
     </task>
+    <task id="LOCAL-00001" summary="Arreglo de funcionalidad">
+      <option name="closed" value="true" />
+      <created>1710391634491</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1710391634491</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,6 +156,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Arreglo de funcionalidad" />
+    <option name="LAST_COMMIT_MESSAGE" value="Arreglo de funcionalidad" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
