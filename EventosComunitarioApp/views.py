@@ -1,26 +1,25 @@
-from django.shortcuts import render
 from .models import Evento
-from django.shortcuts import render, redirect, get_object_or_404
-from django.db.models import Q
+from django.shortcuts import render, redirect, get_object_or_404, reverse
+
+from .models import Evento
+
+
 def pagina_bienvenida(request):
     return render(request, 'paginas/bienvenida.html')
 
 def calendario_eventos(request):
-    # Obtener todos los eventos de la base de datos
     eventos = Evento.objects.all()
 
-    # Convertir los eventos en un formato adecuado para FullCalendar
     eventos_fullcalendar = []
     for evento in eventos:
         evento_dict = {
             'title': evento.titulo,
-            'start': evento.fecha.isoformat(),  # Formato ISO 8601 para la fecha
-            'url': f'/detalle_evento/{evento.id}/',  # URL para redireccionar al detalle del evento
+            'start': evento.fecha.isoformat(),
+            'url': reverse('detalle_evento', args=[evento.id]),  # Usar reverse para generar la URL
         }
         eventos_fullcalendar.append(evento_dict)
 
     return render(request, 'paginas/calendarios.html', {'eventos_fullcalendar': eventos_fullcalendar})
-
 def registro_eventos(request):
     if request.method == 'POST':
         titulo = request.POST.get('event-title')

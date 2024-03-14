@@ -12,11 +12,26 @@
         <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
             <h1 class="text-3xl font-bold mb-4">Detalle del Evento</h1>
             <div class="mb-4">
-                <p><strong>Título:</strong> {{ evento.titulo }}</p>
-                <p><strong>Fecha:</strong> {{ evento.fecha }}</p>
-                <p><strong>Ubicación:</strong> {{ evento.ubicacion }}</p>
-                <p><strong>Descripción:</strong> {{ evento.descripcion }}</p>
-                <p><strong>Asistentes:</strong> {{ evento.numero_asistentes }}</p>
+                <div class="mb-4">
+                    <strong class="block text-gray-700 font-bold mb-2">Título:</strong>
+                    <p class="text-gray-700">{{ evento.titulo }}</p>
+                </div>
+                <div class="mb-4">
+                    <strong class="block text-gray-700 font-bold mb-2">Fecha:</strong>
+                    <p class="text-gray-700">{{ evento.fecha }}</p>
+                </div>
+                <div class="mb-4">
+                    <strong class="block text-gray-700 font-bold mb-2">Ubicación:</strong>
+                    <p class="text-gray-700">{{ evento.ubicacion }}</p>
+                </div>
+                <div class="mb-4">
+                    <strong class="block text-gray-700 font-bold mb-2">Descripción:</strong>
+                    <p class="text-gray-700">{{ evento.descripcion }}</p>
+                </div>
+                <div class="mb-4">
+                    <strong class="block text-gray-700 font-bold mb-2">Asistentes:</strong>
+                    <p class="text-gray-700">{{ evento.numero_asistentes }}</p>
+                </div>
             </div>
             <!-- Botón para registrar asistencia -->
             <a href="{% url 'registrar_asistencia' evento.id %}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Registrar Asistencia</a>
