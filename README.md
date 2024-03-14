@@ -9,7 +9,7 @@ eventos locales de manera sencilla y eficiente.
 - 📝 Formulario de registro de eventos
 - 🔍 Búsqueda de eventos por título, fecha o ubicación
 - 📌 Detalles completos del evento con información relevante
-- �?Registro de asistencia fácil y rápido.
+- ✅ Registro de asistencia fácil y rápido
 
 ## Instalación
 
