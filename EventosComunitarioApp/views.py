@@ -8,15 +8,32 @@ def calendario_eventos(request):
     # Lógica para mostrar el calendario de eventos
     return render(request, 'paginas/calendarios.html')
 
+
+from django.shortcuts import render, redirect
+from .models import Evento
+
+from django.shortcuts import render, redirect
+from .models import Evento
+
+
 def registro_eventos(request):
     if request.method == 'POST':
-        # Procesar el formulario enviado
-        # Guardar los datos del evento en la base de datos
-        # Redireccionar a la página de éxito o mostrar un mensaje de éxito
-        pass
+        titulo = request.POST.get('event-title')
+        fecha = request.POST.get('event-date')
+        ubicacion = request.POST.get('event-location')
+        descripcion = request.POST.get('event-description')
+
+        evento = Evento.objects.create(
+            titulo=titulo,
+            fecha=fecha,
+            ubicacion=ubicacion,
+            descripcion=descripcion
+        )
+
+        return redirect('detalle_evento', evento_id=evento.id)
     else:
-        # Renderizar el formulario vacío
         return render(request, 'paginas/registro_evento.html')
+
 
 def buscar_eventos(request):
     eventos = None

@@ -11,6 +11,7 @@
       <change beforePath="$PROJECT_DIR$/EventosComunitarioApp/templates/paginas/detalle_evento.html" beforeDir="false" afterPath="$PROJECT_DIR$/EventosComunitarioApp/templates/paginas/detalle_evento.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EventosComunitarioApp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/EventosComunitarioApp/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EventosComunitarioApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/EventosComunitarioApp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +120,7 @@
       <workItem from="1710363652553" duration="4923000" />
       <workItem from="1710368727005" duration="930000" />
       <workItem from="1710370867381" duration="6463000" />
-      <workItem from="1710378322760" duration="907000" />
+      <workItem from="1710378322760" duration="2042000" />
     </task>
     <servers />
   </component>
