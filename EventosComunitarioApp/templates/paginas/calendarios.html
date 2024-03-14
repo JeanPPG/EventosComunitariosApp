@@ -30,6 +30,15 @@
         $(document).ready(function() {
             $('#calendario').fullCalendar({
                 // Configuración del calendario
+                events: [
+                    {% for evento in eventos_fullcalendar %}
+                    {
+                        title: '{{ evento.title }}',
+                        start: '{{ evento.start }}',
+                        url: '{{ evento.url }}'
+                    },
+                    {% endfor %}
+                ],
                 dayClick: function(date, jsEvent, view) {
                     var events = $('#calendario').fullCalendar('clientEvents', function(event) {
                         return event.start.format('YYYY-MM-DD') === date.format('YYYY-MM-DD');

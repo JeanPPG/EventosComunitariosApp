@@ -5,16 +5,20 @@ def pagina_bienvenida(request):
     return render(request, 'paginas/bienvenida.html')
 
 def calendario_eventos(request):
-    # Lógica para mostrar el calendario de eventos
-    return render(request, 'paginas/calendarios.html')
+    # Obtener todos los eventos de la base de datos
+    eventos = Evento.objects.all()
 
+    # Convertir los eventos en un formato adecuado para FullCalendar
+    eventos_fullcalendar = []
+    for evento in eventos:
+        evento_dict = {
+            'title': evento.titulo,
+            'start': evento.fecha.isoformat(),  # Formato ISO 8601 para la fecha
+            'url': f'/detalle_evento/{evento.id}/',  # URL para redireccionar al detalle del evento
+        }
+        eventos_fullcalendar.append(evento_dict)
 
-from django.shortcuts import render, redirect
-from .models import Evento
-
-from django.shortcuts import render, redirect
-from .models import Evento
-
+    return render(request, 'paginas/calendarios.html', {'eventos_fullcalendar': eventos_fullcalendar})
 
 def registro_eventos(request):
     if request.method == 'POST':
