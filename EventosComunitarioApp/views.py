@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from .models import Evento
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.db.models import Q
 def pagina_bienvenida(request):
     return render(request, 'paginas/bienvenida.html')
@@ -52,6 +52,7 @@ def detalle_evento(request, evento_id):
     return render(request, 'paginas/detalle_evento.html', {'evento': evento})
 
 def registrar_asistencia(request, evento_id):
-    evento = Evento.objects.get(pk=evento_id)
-    # Lógica para registrar la asistencia aquí
-    return redirect('paginas/detalle_evento', evento_id=evento_id)
+    evento = get_object_or_404(Evento, pk=evento_id)
+    evento.numero_asistentes += 1
+    evento.save()
+    return redirect('detalle_evento', evento_id=evento_id)
