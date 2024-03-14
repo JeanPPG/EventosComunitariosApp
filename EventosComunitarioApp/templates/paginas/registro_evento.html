@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Evento</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto py-8">
+        <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+            <h2 class="text-3xl font-bold text-center mb-4">Registrar un Evento</h2>
+            <p class="text-gray-500 text-center mb-8">Ingrese los detalles del evento a continuación.</p>
+            <form method="post" class="space-y-4">
+                {% csrf_token %}
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="space-y-2">
+                        <label class="text-sm font-medium text-gray-700" for="event-title">Título del evento</label>
+                        <input class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" id="event-title" name="event-title" type="text" placeholder="Título del evento" required>
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-sm font-medium text-gray-700" for="event-date">Fecha del evento</label>
+                        <input class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" id="event-date" name="event-date" type="date" required>
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-sm font-medium text-gray-700" for="event-time">Hora del evento</label>
+                        <input class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" id="event-time" name="event-time" type="time" required>
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-sm font-medium text-gray-700" for="event-location">Ubicación del evento</label>
+                        <input class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" id="event-location" name="event-location" type="text" placeholder="Ubicación del evento" required>
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-sm font-medium text-gray-700" for="event-description">Descripción del evento</label>
+                        <textarea class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" id="event-description" name="event-description" rows="3" placeholder="Descripción del evento" required></textarea>
+                    </div>
+                </div>
+                <div class="mt-8">
+                    <button type="submit" class="w-full bg-indigo-500 text-white py-2 px-4 rounded-md hover:bg-indigo-600 focus:outline-none focus:bg-indigo-600">Registrar evento</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
