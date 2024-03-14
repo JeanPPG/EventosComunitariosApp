@@ -5,19 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8227cca9-c742-4d7f-ad15-6ef71f3ba8e6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/EventosComunitarioApp.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EventosComunitarioApp/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EventosComunitarioApp/asgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EventosComunitarioApp/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EventosComunitarioApp/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EventosComunitarioApp/wsgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EventosComunitarioApp/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EventosComunitarioApp/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EventosComunitarioApp/templates/paginas/bienvenida.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EventosComunitarioApp/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requerimientos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/EventosComunitarioApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/EventosComunitarioApp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EventosComunitarioApp/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/EventosComunitarioApp/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EventosComunitarioApp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/EventosComunitarioApp/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,12 +24,22 @@
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2dYKgNmt9cnNqz4HwmAEa09A9AZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -44,6 +51,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Django Server.EventosComunitarioApp.executor": "Run",
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -57,6 +65,14 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Documentos\Github\EventosComunitariosApp\EventosComunitarioApp\static" />
+      <recent name="D:\Documentos\Github\EventosComunitariosApp\EventosComunitarioApp\templates\paginas" />
+      <recent name="D:\Documentos\Github\EventosComunitariosApp\EventosComunitarioApp" />
+      <recent name="D:\Documentos\Github\EventosComunitariosApp\EventosComunitarioApp\templates" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="EventosComunitarioApp" type="Python.DjangoServer" factoryName="Django server">
       <module name="EventosComunitarioApp" />
@@ -65,6 +81,7 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="EventosComunitarioApp.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -102,6 +119,7 @@
       <option name="presentableId" value="Default" />
       <updated>1710179681867</updated>
       <workItem from="1710179687792" duration="1115000" />
+      <workItem from="1710363652553" duration="4923000" />
     </task>
     <servers />
   </component>
