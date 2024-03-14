@@ -5,20 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8227cca9-c742-4d7f-ad15-6ef71f3ba8e6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/EventosComunitarioApp/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EventosComunitarioApp/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EventosComunitarioApp/templates/paginas/bienvenida.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EventosComunitarioApp/templates/paginas/buscar_eventos.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EventosComunitarioApp/templates/paginas/calendarios.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EventosComunitarioApp/templates/paginas/detalle_evento.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EventosComunitarioApp/templates/paginas/registro_evento.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EventosComunitarioApp/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requerimientos.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/EventosComunitarioApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/EventosComunitarioApp.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventosComunitarioApp/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/EventosComunitarioApp/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EventosComunitarioApp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/EventosComunitarioApp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EventosComunitarioApp/templates/paginas/bienvenida.html" beforeDir="false" afterPath="$PROJECT_DIR$/EventosComunitarioApp/templates/paginas/bienvenida.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EventosComunitarioApp/templates/paginas/detalle_evento.html" beforeDir="false" afterPath="$PROJECT_DIR$/EventosComunitarioApp/templates/paginas/detalle_evento.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EventosComunitarioApp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/EventosComunitarioApp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EventosComunitarioApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/EventosComunitarioApp/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,24 +44,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Django Server.EventosComunitarioApp.executor": "Run",
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "vcs.Mercurial",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Django Server.EventosComunitarioApp.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.pycharm.django.structure.promotion.once.per.project&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Mercurial&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Documentos\Github\EventosComunitariosApp\EventosComunitarioApp\static" />
@@ -127,6 +119,7 @@
       <workItem from="1710363652553" duration="4923000" />
       <workItem from="1710368727005" duration="930000" />
       <workItem from="1710370867381" duration="6463000" />
+      <workItem from="1710378322760" duration="907000" />
     </task>
     <servers />
   </component>

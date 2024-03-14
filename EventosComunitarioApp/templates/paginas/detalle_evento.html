@@ -17,8 +17,9 @@
                 <p><strong>Ubicación:</strong> {{ evento.ubicacion }}</p>
                 <p><strong>Descripción:</strong> {{ evento.descripcion }}</p>
             </div>
+            <!-- Botón para registrar asistencia -->
+            <a href="{% url 'registrar_asistencia' evento.id %}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Registrar Asistencia</a>
         </div>
     </div>
 </body>
 </html>
-

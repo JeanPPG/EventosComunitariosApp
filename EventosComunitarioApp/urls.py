@@ -26,5 +26,6 @@ urlpatterns = [
     path('registro-evento/', views.registro_eventos, name='registro_evento'),
     path('buscar_evento/', views.buscar_eventos, name='buscar_evento'),
     path('evento/<int:evento_id>/', views.detalle_evento, name='detalle_evento'),
+    path('evento/<int:evento_id>/registrar_asistencia/', views.registrar_asistencia, name='registrar_asistencia'),
 ]
 

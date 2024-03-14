@@ -1,14 +1,12 @@
 from django.shortcuts import render
 from .models import Evento
-
+from django.shortcuts import render, redirect
 def pagina_bienvenida(request):
     return render(request, 'paginas/bienvenida.html')
 
 def calendario_eventos(request):
     # Lógica para mostrar el calendario de eventos
     return render(request, 'paginas/calendarios.html')
-
-from django.shortcuts import render
 
 def registro_eventos(request):
     if request.method == 'POST':
@@ -30,3 +28,8 @@ def buscar_eventos(request):
 def detalle_evento(request, evento_id):
     evento = Evento.objects.get(pk=evento_id)
     return render(request, 'paginas/detalle_evento.html', {'evento': evento})
+
+def registrar_asistencia(request, evento_id):
+    evento = Evento.objects.get(pk=evento_id)
+    # Lógica para registrar la asistencia aquí
+    return redirect('paginas/detalle_evento', evento_id=evento_id)
