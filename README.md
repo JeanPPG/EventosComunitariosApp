@@ -7,7 +7,7 @@ eventos locales de manera sencilla y eficiente.
 
 - 📅 Calendario de eventos interactivo
 - 📝 Formulario de registro de eventos
-- 🔍 Búsqueda de eventos por título, fecha o ubicación
+- 🔍 Búsqueda de eventos por título
 - 📌 Detalles completos del evento con información relevante
 - ✅ Registro de asistencia fácil y rápido
 
